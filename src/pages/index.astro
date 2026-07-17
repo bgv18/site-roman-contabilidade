@@ -1,0 +1,233 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const services = [
+  {
+    title: 'Abertura e regularização',
+    description: 'Estruturamos a operação com o enquadramento certo, sem ruído fiscal e com documentação organizada.',
+  },
+  {
+    title: 'BPO financeiro',
+    description: 'Controle de contas a pagar, a receber e fluxo de caixa para dar visão real do negócio.',
+  },
+  {
+    title: 'Fiscal e tributário',
+    description: 'Apuração, obrigações acessórias e acompanhamento para reduzir riscos e evitar multas.',
+  },
+  {
+    title: 'Departamento pessoal',
+    description: 'Admissão, folha, férias e rescisões com processos claros e suporte próximo.',
+  },
+];
+
+const diferentials = [
+  'Atendimento consultivo, sem linguagem complicada',
+  'Processos digitais e organização de documentos',
+  'Visão estratégica para apoiar decisões do negócio',
+];
+
+const steps = [
+  'Diagnóstico do cenário atual e dos objetivos da empresa',
+  'Mapeamento fiscal, contábil e financeiro com prioridades',
+  'Implantação dos processos e acompanhamento contínuo',
+];
+---
+
+<BaseLayout title="Roman Contabilidade | Gestão contábil para empresas" description="Site institucional em Astro e Tailwind para uma contabilidade moderna, clara e estratégica.">
+  <main class="relative overflow-hidden">
+    <div class="pointer-events-none absolute inset-0 -z-10 opacity-70">
+      <div class="absolute left-1/2 top-0 h-[32rem] w-[32rem] -translate-x-1/2 rounded-full bg-emerald-400/10 blur-3xl"></div>
+      <div class="absolute right-0 top-40 h-72 w-72 rounded-full bg-cyan-400/10 blur-3xl"></div>
+    </div>
+
+    <header class="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-6 lg:px-8">
+      <a href="#top" class="text-lg font-extrabold tracking-[0.24em] text-white uppercase">Roman</a>
+      <nav class="hidden gap-8 text-sm text-slate-300 md:flex">
+        <a href="#servicos" class="transition hover:text-white">Serviços</a>
+        <a href="#diferenciais" class="transition hover:text-white">Diferenciais</a>
+        <a href="#processo" class="transition hover:text-white">Processo</a>
+        <a href="#contato" class="transition hover:text-white">Contato</a>
+      </nav>
+      <a
+        href="#contato"
+        class="rounded-full border border-emerald-400/30 bg-emerald-400/10 px-4 py-2 text-sm font-semibold text-emerald-200 transition hover:bg-emerald-400/20"
+      >
+        Fale com a equipe
+      </a>
+    </header>
+
+    <section id="top" class="mx-auto grid w-full max-w-7xl gap-14 px-6 pb-20 pt-10 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:pb-28 lg:pt-16">
+      <div class="max-w-2xl">
+        <p class="mb-4 inline-flex rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-sm font-medium text-emerald-200">
+          Contabilidade consultiva para empresas que querem crescer com segurança
+        </p>
+        <h1 class="text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">
+          Organização contábil com visão estratégica para o seu negócio.
+        </h1>
+        <p class="mt-6 max-w-xl text-lg leading-8 text-slate-300">
+          Estruturamos processos fiscais, contábeis e financeiros para dar previsibilidade, reduzir riscos e apoiar decisões com clareza.
+        </p>
+        <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+          <a href="#contato" class="inline-flex items-center justify-center rounded-full bg-emerald-400 px-6 py-3 font-semibold text-slate-950 transition hover:scale-[1.02]">
+            Solicitar diagnóstico
+          </a>
+          <a href="#servicos" class="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 font-semibold text-white transition hover:bg-white/10">
+            Ver serviços
+          </a>
+        </div>
+        <div class="mt-10 grid gap-4 sm:grid-cols-3">
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
+            <div class="text-2xl font-bold text-white">+12</div>
+            <div class="mt-1 text-sm text-slate-300">anos de experiência</div>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
+            <div class="text-2xl font-bold text-white">100%</div>
+            <div class="mt-1 text-sm text-slate-300">processo digital</div>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
+            <div class="text-2xl font-bold text-white">24h</div>
+            <div class="mt-1 text-sm text-slate-300">pra resposta inicial</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-emerald-400/20 to-cyan-400/10 blur-2xl"></div>
+        <div class="relative rounded-[2rem] border border-white/10 bg-slate-950/70 p-6 shadow-2xl shadow-black/30 backdrop-blur-xl">
+          <div class="flex items-center justify-between border-b border-white/10 pb-5">
+            <div>
+              <p class="text-sm text-slate-400">Painel operacional</p>
+              <h2 class="mt-1 text-xl font-bold text-white">Visão financeira e fiscal</h2>
+            </div>
+            <div class="rounded-full bg-emerald-400/15 px-3 py-1 text-xs font-semibold text-emerald-200">Em dia</div>
+          </div>
+
+          <div class="mt-6 space-y-4">
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <div class="flex items-center justify-between text-sm text-slate-300">
+                <span>Regime tributário sugerido</span>
+                <span class="font-semibold text-white">Lucro Presumido</span>
+              </div>
+              <div class="mt-3 h-2 rounded-full bg-white/10">
+                <div class="h-2 w-[78%] rounded-full bg-gradient-to-r from-emerald-400 to-cyan-400"></div>
+              </div>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p class="text-sm text-slate-400">Impostos do mês</p>
+                <p class="mt-2 text-3xl font-bold text-white">R$ 18,4k</p>
+                <p class="mt-1 text-sm text-emerald-200">Planejado sem surpresas</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p class="text-sm text-slate-400">Pendências</p>
+                <p class="mt-2 text-3xl font-bold text-white">0</p>
+                <p class="mt-1 text-sm text-emerald-200">Documentação organizada</p>
+              </div>
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+              <p class="text-sm font-medium text-slate-300">Especialidades</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                {diferentials.map((item) => (
+                  <span class="rounded-full border border-white/10 bg-slate-900/60 px-3 py-1 text-sm text-slate-200">{item}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="mx-auto w-full max-w-7xl px-6 py-20 lg:px-8">
+      <div class="max-w-2xl">
+        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-200">Serviços</p>
+        <h2 class="mt-3 text-3xl font-bold text-white sm:text-4xl">Tudo o que a operação precisa para funcionar sem fricção.</h2>
+      </div>
+
+      <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+        {services.map((service) => (
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition hover:-translate-y-1 hover:bg-white/8">
+            <h3 class="text-xl font-bold text-white">{service.title}</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-300">{service.description}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section id="diferenciais" class="mx-auto w-full max-w-7xl px-6 py-20 lg:px-8">
+      <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-200">Diferenciais</p>
+          <h2 class="mt-3 text-3xl font-bold text-white sm:text-4xl">Uma contabilidade que fala a língua do empreendedor.</h2>
+          <p class="mt-5 max-w-xl text-base leading-8 text-slate-300">
+            A proposta é reduzir ruído, trazer previsibilidade e entregar informações que realmente ajudam no dia a dia da empresa.
+          </p>
+        </div>
+
+        <div class="grid gap-4">
+          {diferentials.map((item, index) => (
+            <div class="flex items-start gap-4 rounded-2xl border border-white/10 bg-white/5 p-5">
+              <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-400 text-sm font-bold text-slate-950">0{index + 1}</div>
+              <div>
+                <h3 class="font-semibold text-white">{item}</h3>
+                <p class="mt-2 text-sm leading-7 text-slate-300">
+                  Atendimento objetivo, documentação centralizada e acompanhamento com foco em decisão.
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section id="processo" class="mx-auto w-full max-w-7xl px-6 py-20 lg:px-8">
+      <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-lg lg:p-10">
+        <div class="max-w-2xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-200">Processo</p>
+          <h2 class="mt-3 text-3xl font-bold text-white sm:text-4xl">Etapas simples para colocar a contabilidade em ordem.</h2>
+        </div>
+
+        <div class="mt-8 grid gap-4 lg:grid-cols-3">
+          {steps.map((step, index) => (
+            <div class="rounded-2xl border border-white/10 bg-slate-950/50 p-6">
+              <p class="text-sm font-semibold text-emerald-200">Etapa {index + 1}</p>
+              <p class="mt-3 text-base leading-7 text-slate-200">{step}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="mx-auto w-full max-w-7xl px-6 py-20 lg:px-8">
+      <div class="rounded-[2rem] border border-emerald-400/20 bg-gradient-to-br from-emerald-400/15 via-white/5 to-cyan-400/10 p-8 lg:p-10">
+        <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-200">Contato</p>
+            <h2 class="mt-3 text-3xl font-bold text-white sm:text-4xl">Pronto para ter uma contabilidade mais clara e previsível?</h2>
+            <p class="mt-5 max-w-2xl text-base leading-8 text-slate-300">
+              Esse site já está preparado para receber formulário, WhatsApp ou integração com uma ferramenta de leads, se você quiser evoluir depois.
+            </p>
+          </div>
+
+          <div class="rounded-3xl border border-white/10 bg-slate-950/65 p-6">
+            <p class="text-sm text-slate-400">Canais</p>
+            <div class="mt-4 space-y-3 text-slate-200">
+              <p>Email: contato@romancontabilidade.com.br</p>
+              <p>Telefone: (11) 99999-9999</p>
+              <p>WhatsApp: (11) 99999-9999</p>
+            </div>
+            <a href="mailto:contato@romancontabilidade.com.br" class="mt-6 inline-flex w-full items-center justify-center rounded-full bg-emerald-400 px-5 py-3 font-semibold text-slate-950 transition hover:scale-[1.01]">
+              Enviar mensagem
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mx-auto flex w-full max-w-7xl flex-col gap-4 px-6 pb-10 pt-4 text-sm text-slate-400 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+      <p>© 2026 Roman Contabilidade. Todos os direitos reservados.</p>
+      <p>Astro + Tailwind CSS para uma presença digital rápida e elegante.</p>
+    </footer>
+  </main>
+</BaseLayout>
